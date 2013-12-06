@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8" />
   <title>VexTab Tutorial</title>
   <link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT|Yanone+Kaffeesatz|Tangerine'
-   rel='stylesheet' type='text/css'>
-  <link href="tabdiv.css" media="screen" rel="Stylesheet" type="text/css" />
-  <link href="style.css" media="screen" rel="Stylesheet" type="text/css" />
+   rel='stylesheet' type='text/css' />
+  <link href="tabdiv.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
   <!-- Support Sources -->
   <script src="../support/vexflow-min.js"></script>
@@ -32,7 +34,7 @@
     <h2>What is VexTab?</h2>
     <div class="description">
       VexTab is a language that allows you to easily create, edit, and share standard notation and guitar tablature. Unlike ASCII tab, which is designed for readability, VexTab is designed for writeability.
-      <p/>
+      <p></p>
       Follow along below to start writing beautiful music notation. If you want to save and share your writing, go to <a href="http://my.vexflow.com">My VexFlow</a>.
     </div>
 
@@ -42,16 +44,16 @@
       The <code>tabstave</code> keyword is used to create a new tab
       stave. The green code box below is editable - try adding another
       stave by typing <code>tabstave</code> on a new line.
-      <p/>
+      <p></p>
       <code>tabstave</code> takes keyword arguments. For example, the string
       <code>tabstave notation=true</code> renders a standard notation stave
       above the tab stave. Try this on the tab stave below.
     </div>
 
-    <div style="width:420; margin-left: auto; margin-right: auto;">
+    <div style="width:420px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=400 scale=1.0 editor="true"
-      editor_height=80>tabstave</div>
+      width="400" scale="1.0" editor="true"
+      editor_height="80">tabstave</div>
     </div>
 
     <h2>Step 2: Add some notes</h2>
@@ -59,24 +61,24 @@
       The <code>notes</code> keyword can be used to add notes. Notes can be represented as <code>note/octave</code> or as <code>fret/string</code>. To add a long line of notes on the same string (or the same octave), you can use the format
       <code>fret-fret-fret/string</code> (or <code>note-note-note/octave</code>).
 
-      <p/>
+      <p></p>
       Try editing the notation below. Notice how the notes are justified in the stave. Notes can be suffixed by the following accidentals: <code>#, ##, @, @@,</code> and <code>n</code> signifying sharp, double-sharp, flat, double-flat, and natural, respectively.
     </div>
 
-    <div style="width:420; margin-left: auto; margin-right: auto;">
+    <div style="width:420px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=400 scale=1.0 editor="true" editor_height=100>tabstave notation=true tablature=false
+      width="400" scale="1.0" editor="true" editor_height="100">tabstave notation=true tablature=false
 notes Cn-D-E/4 F#/5</div>
     </div>
 
     <div>
-      <p/>
+      <p></p>
       Here's some guitar tab. Try adding more frets below.
     </div>
 
-    <div style="width:420; margin-left: auto; margin-right: auto;">
+    <div style="width:420px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=400 scale=1.0 editor="true" editor_height=100>tabstave notation=true
+      width="400" scale="1.0" editor="true" editor_height="100">tabstave notation=true
 notes 4-5-6/3 10/4</div>
     </div>
 
@@ -126,25 +128,25 @@ notes 4-5-6/3 10/4</div>
       Try these on the tab stave below.
     </div>
 
-    <div style="width:420; margin-left: auto; margin-right: auto;">
+    <div style="width:420px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=400 scale=1.0 editor="true"
-      editor_height=80>tabstave notation=true clef=bass key=Ab time=C|
+      width="400" scale="1.0" editor="true"
+      editor_height="80">tabstave notation=true clef=bass key=Ab time=C|
 notes 4-5/6</div>
     </div>
 
     <h2>Step 4: Add rests and bar-lines</h2>
     <div class="description">
       You can render a rest on the notation stave by typing <code>##</code>. Rests are positioned automatically, but you can specify a position by inserting a number in between the hashes, e.g., <code>#4#</code>. The position ranges from <code>0</code> to <code>9</code> (bottom to top.)
-      <p/>
+      <p></p>
       The <code>|</code> character places a bar-line between the notes. You
       can add as many bars as you want to a stave.
     </div>
 
-    <div style="width:520; margin-left: auto; margin-right: auto;">
+    <div style="width:520px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=500 scale=1.0 editor="true"
-      editor_height=110>tabstave notation=true
+      width="500" scale="1.0" editor="true"
+      editor_height="110">tabstave notation=true
 notes 4-5-6/3 ## | 5-4-2/3 2/2
 
 tabstave notation=true tablature=false
@@ -153,18 +155,18 @@ notes C-D-E/4 #0# | C-D-E-F/4</div>
 
      <div class="description">
       Bar-lines can get fancy. You can render double bars, repeats, end bars using the various barline codes.
-      <p/>
-      <code>=||</code> &nbsp; Double Bar <br/>
-      <code>=|:</code> &nbsp;Repeat Begin <br/>
-      <code>=:|</code> &nbsp;Repeat End <br/>
-      <code>=::</code> &nbsp;Double Repeat <br/>
-      <code>=|=</code> &nbsp;End Bar <br/>
+      <p></p>
+      <code>=||</code> &#160; Double Bar <br/>
+      <code>=|:</code> &#160;Repeat Begin <br/>
+      <code>=:|</code> &#160;Repeat End <br/>
+      <code>=::</code> &#160;Double Repeat <br/>
+      <code>=|=</code> &#160;End Bar <br/>
     </div>
 
-    <div style="width:520; margin-left: auto; margin-right: auto;">
+    <div style="width:520px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=500 scale=1.0 editor="true"
-      editor_height=110>tabstave notation=true tablature=false
+      width="500" scale="1.0" editor="true"
+      editor_height="110">tabstave notation=true tablature=false
 notes 4-5-6/3 ## =|: 5-4-2/3 2/2 =:|
 
 tabstave notation=true tablature=false
@@ -175,16 +177,16 @@ notes C-D-E/4 #0# =:: C-D-E-F/4 =|=</div>
     <div class="description">
       To draw bends, separate two frets with a <code>b</code> character. The
       difference between the frets determines how much to bend. E.g.,
-      <code>10b12</code> is a full-step bend.<p/>
+      <code>10b12</code> is a full-step bend.<p></p>
       If you separate three frets with a bend, and the first fret is the same
       as the last fret, a bend-and-release is displayed.
       E.g., <code>10b12b10</code>.
     </div>
 
-    <div style="width:520; margin-left: auto; margin-right: auto;">
+    <div style="width:520px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=500 scale=1.0 editor="true"
-      editor_height=110>tabstave
+      width="500" scale="1.0" editor="true"
+      editor_height="110">tabstave
 notes 4-5-6b7/3 10/4 | 5-4-2/3 2/2
 
 tabstave
@@ -194,33 +196,33 @@ notes 6-7b9b7/3 7/4 | 9-8-7-6/2</div>
     <h2>Step 6: Mute notes, show strokes, and add vibrato</h2>
     <div class="description">
       You can render a muted note by replace the fret (or note name) with an <code>X</code>.
-      <p/>
+      <p></p>
       Adding a <code>v</code> to the end of a note signifies
       a vibrato. A capital v (<code>V</code>) signifies a harsh vibrato. You
       can also add a vibrato to a bend.
-      <p/>
+      <p></p>
       You can also add a <code>u</code> or a <code>d</code> to designate upstrokes or downstrokes respectively.
     </div>
 
-    <div style="width:520; margin-left: auto; margin-right: auto;">
+    <div style="width:520px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=500 scale=1.0 editor="true"
-      editor_height=110>tabstave notation=true
+      width="500" scale="1.0" editor="true"
+      editor_height="110">tabstave notation=true
 notes 4-5-6b7v/3 10/1 | 5d-4u-Xd/3 2v/2
-    </div>
+    </div></div>
 
     <h2>Step 7: Add some chords</h2>
     <div class="description">
       To render chords, group notes in parenthesis and separate each
       <code>string/fret</code> (or <code>note/octave</code>) combination with a period. E.g., <code>(4/5.5/6)</code> or <code>C/4.E/4</code>.
-      <p/>
+      <p></p>
       For tablature, you can bend, slide, etc. individual notes in a chord just like you would for single notes.
     </div>
 
-    <div style="width:520; margin-left: auto; margin-right: auto;">
+    <div style="width:520px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=500 scale=1.0 editor="true"
-      editor_height=130>tabstave notation=true tablature=false
+      width="500" scale="1.0" editor="true"
+      editor_height="130">tabstave notation=true tablature=false
   notes (C/4.E/4.G/4) C-E-G/4
 
 tabstave notation=true
@@ -234,14 +236,14 @@ tabstave notation=true
       <code>h</code>, <code>p</code>, <code>t</code> or <code>s</code>,
       respectively. For example, to render a hammer-on/pull-off combo from
       fret 6 to 8 back to 6, use <code>6h8p6</code>.
-      <p/>
+      <p></p>
       You can also hammer-on, pull-off, tap, and slide between chords.
     </div>
 
-    <div style="width:520; margin-left: auto; margin-right: auto;">
+    <div style="width:520px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=500 scale=1.0 editor="true"
-      editor_height=230>tabstave
+      width="500" scale="1.0" editor="true"
+      editor_height="230">tabstave
   notes (5/2.5/3.7/4) 5h6/3 7/4 |
   notes t12p7p5h7/4 7/5 5s3/5
 
@@ -259,34 +261,34 @@ tabstave
       By default, note durations are set to quarter notes. To change the duration
       of the following notes you can use the colon character <code>:</code> followed
       by a duration code.
-      <p/>
+      <p></p>
       For example, <code>:w</code> specifies a whole note. The currently available
       durations are: <code>w h q 8 16 32</code>, for whole, half, quarter, eighth,
       sixteenth, and thirty-second note durations. Suffixing a dot to the duration indicates a dotted note.
-      <p/>
+      <p></p>
       You can indicate tuplets by enclosing a tuplet number (3, 5, 7, etc.) within caret signs (<code>^</code>). VexTab will create a tuplet out of the preceding notes. For example, <code>:8 4-5-6/4 ^3^</code> will create
       a triplet out of three notes.
     </div>
 
-    <div style="width:520; margin-left: auto; margin-right: auto;">
+    <div style="width:520px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=500 scale=1.0 editor="true"
-      editor_height=80>tabstave notation=true time=4/4 key=Ab tuning=eb
+      width="500" scale="1.0" editor="true"
+      editor_height="80">tabstave notation=true time=4/4 key=Ab tuning=eb
 notes :8 5s7s8/5 ^3^ :q (5/2.6/3)h(7/3) :8d 5/4 :16 5/5</div>
     </div>
 
     <div class="description">
-      <p/>
+      <p></p>
       Here's another example rendered with durations and standard notation.
       Notice how you can set the duration in the middle of slides, bends, or other
       types of ties by prefixing the fret with <code>:duration:</code>.
-      <p/>
+      <p></p>
     </div>
 
-    <div style="width:640; margin-left: auto; margin-right: auto;">
+    <div style="width:640px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=520 scale=1.0 editor="true"
-      editor_height=100>tabstave notation=true
+      width="520" scale="1.0" editor="true"
+      editor_height="100">tabstave notation=true
 
 notes :q (8/2.7b9b7/3) (5b6/2.5b6/3)v :8 7s12/4
 notes t:16:9s:8:3s:16:0/4</div>
@@ -295,35 +297,35 @@ notes t:16:9s:8:3s:16:0/4</div>
  <h2>Step 10: Add lyrics, annotations, or other text.</h2>
     <div class="description">
       You can annotate your notation by enclosing comma-separated text between dollar symbols (<code>$</code>). VexTab will associate each comma-separated set of words with each of the preceding notes. Annotations can be used for lyrics, chords, picking hints, etc.
-      <p/>
+      <p></p>
       Annotations can be positioned above or below the stave using the <code>$.top.$</code> or <code>$.bottom.$</code> commands.
       Here's an example:
      </div>
 
-    <div style="width:570; margin-left: auto; margin-right: auto;">
+    <div style="width:570px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=550 scale=1.0 editor="true"
-      editor_height=100>tabstave notation=true time=4/4 key=Ab tuning=eb
+      width="550" scale="1.0" editor="true"
+      editor_height="100">tabstave notation=true time=4/4 key=Ab tuning=eb
 notes :q 5/5 5/4 5/3 ^3^ $Fi,Ga,Ro!$ :h 4/4 $.top.$ $Blah!$</div>
     </div>
 
     <div class="description">
       There are two ways to customize these annotations. You can use preset styles or custom styles. For preset styles, simply prefix your annotation with <code>.<i>style</i>.</code> inside the dollar signs. E.g., The code <code>$.big.C Major$</code>, will render the text "C Major" in a big bold font.
 
-      <p/>
+      <p></p>
       The current preset styles are <code>big</code>, <code>medium</code>, and <code>italic</code>.
-      <p/>
+      <p></p>
 
-      <p/>
+      <p></p>
       For custom styles you can specify the font face, size, and style by prefixing your annotation with <code>.<i>face</i>.<i>size</i>.<i>style</i></code> within the dollar signs. E.g., <code>$.Times-14-italic.Blah$</code> will render "Blah" in 14pt Italic Times Roman.
 
       Here are some examples of preset and custom styles.
     </div>
 
-    <div style="width:640; margin-left: auto; margin-right: auto;">
+    <div style="width:640px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=620 scale=1.0 editor="true"
-      editor_height=100>tabstave notation=true key=A
+      width="620" scale="1.0" editor="true"
+      editor_height="100">tabstave notation=true key=A
 notes :q (5/2.5/3.7/4) $.big.A7#9$ 5h6/3 7/4 |
 notes :8 7/4 $.italic.sweep$ 6/3 5/2 3v/1 :q 7v/5 $.Arial-10-bold.P.H$ :8 3s5/5</div>
     </div>
@@ -331,15 +333,15 @@ notes :8 7/4 $.italic.sweep$ 6/3 5/2 3v/1 :q 7v/5 $.Arial-10-bold.P.H$ :8 3s5/5<
 <h2>Step Eleven: Staccatos, Fermatas, and more!</h2>
     <div class="description">
       Add beautiful articulations to your scores using the <code>$.ariculation/position.$</code> syntax.
-      <p/>
+      <p></p>
       Articulations have different codes, e.g., <code>a.</code> for staccato, <code>a@a</code> for up-fermata, etc. They can be positioned on <code>top</code> or on the <code>bottom</code>.
-      <p/>
+      <p></p>
       Below is a list of all the available articulations.
     </div>
-    <div style="width:670; margin-left: auto; margin-right: auto;">
+    <div style="width:670px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=650 scale=1.0 editor="true"
-      editor_height=100>options space=20 font-style=italic
+      width="650" scale="1.0" editor="true"
+      editor_height="100">options space=20 font-style=italic
         font-face=times font-size=10
 
 tabstave notation=true tablature=false
@@ -379,14 +381,14 @@ options space=40
     <div class="description">
       VexTab provides a more flexible alternative for adding text to yor
       scores. You can create a <code>text</code> line with text that can be both vertically positioned, and note aligned. This method is great for notating chords.
-      <p/>
+      <p></p>
       In the example below I've created two text spans, "G Minor" and "A Major", each with a duration of a half-note. Notice that the duration syntax is the same (except that spans are separated by commas.) Also notice how I set the default font size in the <code>options</code> line.
      </div>
 
-    <div style="width:570; margin-left: auto; margin-right: auto;">
+    <div style="width:570px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=550 scale=1.0 editor="true"
-      editor_height=100>options space=12 font-size=14
+      width="550" scale="1.0" editor="true"
+      editor_height="100">options space=12 font-size=14
 
 tabstave notation=true time=4/4 key=Ab tuning=eb
 notes :q 5/5 5/4 5/3 ^3^ :h 4/4
@@ -395,14 +397,14 @@ text :h,G Minor,A Major</div>
 
      <div class="description">
       You can vertically position any text by adding a <code>.<i>NUMBER</i></code> to your list of spans. If unset, <code><i>NUMBER</i></code> defaults to <code>0</code>, which positions your text above the stave. Higher numbers move the text downward, and lower numbers (to the negative) move the text upward.
-      <p/>
+      <p></p>
       Here's an example:
      </div>
 
-    <div style="width:570; margin-left: auto; margin-right: auto;">
+    <div style="width:570px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=550 scale=1.0 editor="true"
-      editor_height=120>options space=10
+      width="550" scale="1.0" editor="true"
+      editor_height="120">options space=10
 
 tabstave notation=true tablature=false time=4/4 key=Ab tuning=eb
 notes :8 C-D-E-F-G-A-B/4 C/5
@@ -413,14 +415,14 @@ options space=10</div>
 
     <div class="description">
       If you have bars in your music, you will need to add a bar to your text so that the notes and text align correctly. Simply add a <code>|</code> between commas to indicate a bar. Bars can have text attached to them by suffixing the <code>|</code> symbol with your text, e.g., <code>|bar</code>.
-      <p/>
+      <p></p>
       Also, you can use the <code>++</code> command in your span to create a new text line on the same stave. Here's an example of these features:
     </div>
 
-    <div style="width:570; margin-left: auto; margin-right: auto;">
+    <div style="width:570px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=550 scale=1.0 editor="true"
-      editor_height=120>options space=10 font-size=12
+      width="550" scale="1.0" editor="true"
+      editor_height="120">options space=10 font-size=12
 
 tabstave notation=true tablature=false
          time=4/4 key=Ab tuning=eb
@@ -436,10 +438,10 @@ options space=15</div>
       Text lines can also contain various musical symbols, such as codas and segnos. Simply prefix the symbol name with a <code>#</code> to render a symbol instead of text, e.g., <code>text #coda</code>.
     </div>
 
-    <div style="width:570; margin-left: auto; margin-right: auto;">
+    <div style="width:570px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=550 scale=1.0 editor="true"
-      editor_height=120>options space=20 font-size=12
+      width="550" scale="1.0" editor="true"
+      editor_height="120">options space=20 font-size=12
 
 tabstave notation=true tablature=false
          time=4/4 key=Ab tuning=eb
@@ -454,14 +456,14 @@ options space=25</div>
 <h2>Step 13: Notate rhythms with slash notation.</h2>
     <div class="description">
       By suffixing a duration with <code>S</code> all following notes on the standard notation stave get rendered as slash notation. You can change the position of the note on the staff by changing the note name.
-      <p/>
+      <p></p>
       You can also use the <code>u</code> or <code>d</code> suffixes to designate upstrokes or downstrokes, respectively.
      </div>
 
-    <div style="width:570; margin-left: auto; margin-right: auto;">
+    <div style="width:570px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=550 scale=1.0 editor="true"
-      editor_height=120>options font-size=14 space=15
+      width="550" scale="1.0" editor="true"
+      editor_height="120">options font-size=14 space=15
 
 tabstave notation=true tablature=false
          time=4/4 clef=percussion
@@ -477,7 +479,7 @@ options space=10
     <div class="description">
       The rendered notation can be customized heavily using the <code>options</code> command. You can change the width, default fonts, scale, and spacing to prettify your notation to your hearts extent. For example, <code>options width=400</code> sets the width of the stave to 400 pixels.
 
-      <p/>
+      <p></p>
 
       Here's a list of the current options, followed by some examples.
      </div>
@@ -513,10 +515,10 @@ options space=10
     <div class="description">
       You can make it big.
     </div>
-    <div style="width:640; margin-left: auto; margin-right: auto;">
+    <div style="width:640px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=420 scale=1.0 editor="true"
-      editor_height=100>options width=100 scale=2.0
+      width="420" scale="1.0" editor="true"
+      editor_height="100">options width=100 scale=2.0
 tabstave notation=true tablature=false
 notes :q 5/5</div>
     </div>
@@ -524,31 +526,31 @@ notes :q 5/5</div>
     <div class="description">
       You can add room above a stave for the high notes.
     </div>
-    <div style="width:640; margin-left: auto; margin-right: auto;">
+    <div style="width:640px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=420 scale=1.0 editor="true"
-      editor_height=100>options space=40 font-size=14
+      width="420" scale="1.0" editor="true"
+      editor_height="100">options space=40 font-size=14
 tabstave notation=true key=A
 notes :q (5/2.5/3.7/4) $A7#9$ 15h16/1 20/1
-</div>
+</div></div>
 
     <div class="description">
       Make more room between note and tab staves.
     </div>
-    <div style="width:640; margin-left: auto; margin-right: auto;">
+    <div style="width:640px; margin-left: auto; margin-right: auto;">
     <div class="vex-tabdiv"
-      width=420 scale=0.8 editor="true"
-      editor_width=335 editor_height=100>options stave-distance=50 scale=0.8
+      width="420" scale="0.8" editor="true"
+      editor_width="335" editor_height="100">options stave-distance=50 scale=0.8
 tabstave notation=true key=A
 notes :q (5/2.5/3.7/4) ## 0h1/6 0/1
-</div>
+</div></div>
 
     <center>
     <h2>Step N + 1: Coming soon</h2>
-      <p/>
+      <p></p>
       Meanwhile, you can save and share your VexTab at <a href="http://my.vexflow.com">My VexFlow</a>.
-      <p/>
-      <a href="http://0xfe.blogspot.com">The Blog</a><p/>
+      <p></p>
+      <a href="http://0xfe.blogspot.com">The Blog</a><p></p>
     </center>
   </div>
 </body>

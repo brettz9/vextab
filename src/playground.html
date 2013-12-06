@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="utf-8" />
   <title>VexTab Playground</title>
-  <style type="text/css">
+  <style>
     body {
       padding: 20px;
       font-family: Arial, sans-serif;
@@ -15,7 +17,7 @@
     #error {
       font-family: Courier;
       color: red;
-      width: 600;
+      width: 600px;
     }
 
     textarea#blah {
@@ -36,7 +38,8 @@
   <script src="../tabdiv-min.js"></script>
 
   <script>
-    $(function() {
+    /*global $, Vex*/
+    $(function() {'use strict';
       Vex.Flow.Artist.DEBUG = true;
       Vex.Flow.VexTab.DEBUG = true;
 
@@ -61,14 +64,14 @@
 
       $("#blah").keyup(_.throttle(render, 250));
       render();
-    })
+    });
   </script>
 </head>
 
 <body>
   <h1>VexTab Playground</h1>
 
-  <div style="float:left;width:600;">
+  <div style="float:left;width:600px;">
     <canvas id="boo"></canvas>
     <div id="error"></div>
   </div>

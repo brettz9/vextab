@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="utf-8" />
   <title>VexTab Tests</title>
-  <style type="text/css">
+  <style>
     body {
       padding: 20px;
       font-family: Arial, sans-serif;
@@ -19,7 +21,7 @@
     }
 
     a.button {
-      color: #green;
+      color: green;
       background: #bfb;
       text-decoration: none;
       padding: 5px;
@@ -75,7 +77,8 @@
   <script src="../output/vextab_tests.js"></script>
 
   <script>
-    $(function() {
+    /*global $, Vex*/
+    $(function() {'use strict';
       Vex.Flow.Artist.DEBUG = true;
       Vex.Flow.VexTab.DEBUG = true;
       Vex.Flow.Test.VexTab.Start();
@@ -92,7 +95,7 @@
 
     <div id="vexflow_testoutput"></div>
 
-    <p/>
+    <p>
     <a href="http://0xfe.blogspot.com">The Blog</a> </p>
   </center>
 </body>
